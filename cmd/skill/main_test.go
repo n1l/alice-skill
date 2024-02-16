@@ -95,8 +95,6 @@ func TestWebhook(t *testing.T) {
 	}
 }
 
-// ...
-
 func TestGzipCompression(t *testing.T) {
 	handler := http.HandlerFunc(gzipMiddleware(webhook))
 
